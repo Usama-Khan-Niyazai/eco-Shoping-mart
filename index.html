@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>home</title>
+  <!-- bootstrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- font awesome cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- boot strap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" -->
+    integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin = "anonymous" ></script>
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- jqeury search filter -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="e-search.js"></script>
+  
+</head>
+
+
+<body>
+  <div>
+    <div class="wrapper">
+      <!-- nav bar  -->
+      <header>
+        <nav>
+          <div id="logo">
+            <img src="Assets/images/Artboard 1-8.png" alt="">
+          </div>
+          <div>
+            <ul id="menuList">
+              <li><a href="index.html">Home</a></li>
+              
+              <li><a  href="fruits.html">Fruits</a></li>
+              <li><a  href="vegitables.html">vegitables</a></li>
+              <li><a href="dairy.html">Dairy</a></li>
+              <li><a href="green Gadgets.html">Green Gadgets</a></li>
+              
+              <!-- <ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle no1" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Catogories
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Green Gadgets</a></li>
+                  </ul>
+                </li>
+              </ul> -->
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+             
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="ri-menu-line"></i></div>
+          </div>
+        </nav>
+      </header>
+    <div id="title">
+      <div class="title" style="color:white">
+        <p>"Nature's Best, Tech at Its Greenest – Your One-Stop Eco Shop"</p>
+      </div>
+    </div>
+      <!--- marquee -->
+
+      <div class="mmain">
+        <div class="marquee">
+          <p>WELLCOME TO GREEN MART.COM AZADI SALE UPTO 10% DISCOUNT</p>
+          <img src="Assets/images/arrow-br.svg" alt="" />
+        </div>
+        <div class="marquee">
+          <p>WELLCOME TO GREEN MART.COM AZADI SALE UPTO 10% DISCOUNT</p>
+          <img src="Assets/images/arrow-br.svg" alt="" />
+        </div>
+        <div class="marquee">
+          <p>WELLCOME TO GREEN MART.COM AZADI SALE UPTO 10% DISCOUNT</p>
+          <img src="Assets/images/arrow-br.svg" alt="" />
+        </div>
+        <div class="marquee">
+          <p>WELLCOME TO GREEN MART.COM AZADI SALE UPTO 10% DISCOUNT</p>
+          <img src="Assets/images/arrow-br.svg" alt="" />
+        </div>
+        <div class="marquee">
+          <p>WELLCOME TO GREEN MART.COM AZADI SALE UPTO 10% DISCOUNT</p>
+          <img src="Assets/images/arrow-br.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- marquee end -->
+      <!-- slider -->
+
+      <div class="slidermain">
+        <div class="pic">
+          <img src="Assets/images/groceries/DAIRY/brian-suman-vdbq-iiyvGY-unsplash.jpg" id="slideone" alt="">
+
+        </div>
+      </div>
+
+
+
+
+      <!-- hero section -->
+      <div class="hero">
+        <div class="input">
+          <form action="">
+            <input type="text" id="search-input" placeholder="Search for fruits..." onkeyup="filterProducts()">
+            <button id="searchicon"><i class="ri-search-line"></i></button>
+          </form>
+        </div>
+        <!-- cards -->
+        <!-- fruits -->
+       
+        <div class="card-container containerItems product-list">
+          <h1> Fruits
+          </h1>
+          <div class="subc">
+          <div class="items product" data-search="Peach">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/10863_533x.webp" alt="">
+            </div>
+            <div id="description">
+              <h4> Fresh Peach</h4>
+              <p>Rs.280.00 kg</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your name"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Location</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Location" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="pbutn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items product " data-search="Angoor Grapes">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/angor-chini.webp" alt="">
+            </div>
+            <div id="description">
+              <h4>Grapes</h4>
+              <p>Rs.160.00 kg</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+              </div>
+            </div>
+          </div>
+          <div class="items product " data-search="Cantaloupe">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/Cantaloupe (1).jpg" alt="">
+            </div>
+            <div id="description">
+              <h4>Cantaloupe</h4>
+              <p>Rs.150.00 kg</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+              </div>
+            </div>
+          </div>
+          <div class="items product " data-search="Chiku">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/chiku.jpg" alt="">
+            </div>
+            <div id="description">
+              <h4>Chiku</h4>
+              <p>Rs.190.00 kg</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+              </div>
+            </div>
+          </div>
+          <div class="items product " data-search="Dates irani">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/date-irani.jpg" alt="">
+            </div>
+            <div id="description">
+              <h4>Dates irani</h4>
+              <p>Rs.400.00 kg</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+              </div>
+            </div>
+          </div>
+
+          <div class="items product " data-search="mango langra Aam">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/12135_533x.webp" alt="">
+            </div>
+            <div id="description">
+              <h4>Langra Mango</h4>
+              <p>Rs.180.00 kg</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your name"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="pbutn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="items product" data-search="custard Apple">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/apple custar.jpg" alt="">
+            </div>
+            <div id="description">
+              <h4>Custard Apple</h4>
+              <p>Rs.28.00 PKR</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your name"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="pbutn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="items product" data-search="Red Apple">
+            <div class="img">
+              <img src="Assets/images/groceries/fruits/apple-kalakulu.jpg" alt="">
+
+            </div>
+            <div id="description">
+              <h4>Red Apple</h4>
+              <p>Rs.28.00 PKR</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your name"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="pbutn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="items product" data-search="Bannana">
+            <div class="img">
+
+              <img src="Assets/images/groceries/fruits/banana.webp" alt="">
+
+            </div>
+            <div id="description">
+              <h4>Bannana</h4>
+              <p>Rs.28.00 PKR</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your name"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="pbutn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="items product" data-search="cherry">
+            <div class="img">
+
+              <img src="Assets/images/groceries/fruits/cherry.jpg" alt="">
+
+            </div>
+            <div id="description">
+              <h4>Cherry</h4>
+              <p>Rs.28.00 PKR</p>
+              <div>
+                <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your name"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your phone" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Enter your address" required>
+                        </div>
+                        <!-- Button trigger modal  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="pbutn">Add to cart</button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- vegitables -->
+          
+          <div class="card-container containerItems">
+            <h1> Vegies
+            </h1>
+            <div class="subc">
+
+              <div class="items product" data-search="Broccoli">
+                <div class="img">
+                  <img src="Assets/images/groceries/vegies/broccoli.jpg" alt="">
+                </div>
+                <div id="description">
+                  <h4>Broccoli</h4>
+                  <p>Rs.160.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="button" id="pbutn" value="Add To Cart" class="btn btn-primary " data-bs-toggle="modal"
+                    >
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="items product" data-search="cauliflower">
+                <div class="img">
+                  <img src="Assets/images/groceries/vegies/cauliflower.jpg" alt="">
+                </div>
+                <div id="description">
+                  <h4>cauliflower</h4>
+                  <p>Rs.80.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="button" id="pbutn" value="Add To Cart" class="btn btn-primary " data-bs-toggle="modal"
+                    >
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="items product" data-search="Cucumber">
+                <div class="img">
+                  <img src="Assets/images/groceries/vegies/desi-cucumber.jpg" alt="">
+                </div>
+                <div id="description">
+                  <h4>Cucumber</h4>
+                  <p>Rs.80.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="button" id="pbutn" value="Add To Cart" class="btn btn-primary " data-bs-toggle="modal"
+                    >
+                 
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="items product" data-search="lemon">
+                <div class="img">
+                  <img src="Assets/images/groceries/vegies/lemon-desi.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4>lemon </h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="button" id="pbutn" value="Add To Cart" class="btn btn-primary " data-bs-toggle="modal"
+                    >
+                  </div>
+                </div>
+              </div>
+            <div class="items product" data-search="baby spinach">
+              <div class="img">
+                <img src="Assets/images/groceries/vegies/baby-spinach..webp" alt="">
+              </div>
+              <div id="description">
+                <h4>Baby Spinach</h4>
+                <p>Rs.28.00 PKR</p>
+                <div>
+                  <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your phone" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your address" required>
+                          </div>
+                          <!-- Button trigger modal  -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="pbutn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="items product" data-search="carrot">
+              <div class="img">
+                <img src="Assets/images/groceries/vegies/carrot-china.webp" alt="">
+              </div>
+              <div id="description">
+                <h4>Carrot</h4>
+                <p>Rs.28.00 PKR</p>
+                <div>
+                  <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your phone" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your address" required>
+                          </div>
+                          <!-- Button trigger modal  -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="pbutn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="items product" data-search=" Cherry tomato">
+              <div class="img">
+                <img src="Assets/images/groceries/vegies/Cherry-Tomato-Red.webp" alt="">
+              </div>
+              <div id="description">
+                <h4>Cherry Tomato</h4>
+                <p>Rs.28.00 PKR</p>
+                <div>
+                  <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your phone" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your address" required>
+                          </div>
+                          <!-- Button trigger modal  -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="pbutn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="items product" data-search=" bottle gourd long">
+              <div class="img">
+                <img src="Assets/images/groceries/vegies/bottle-gourd-long.webp" alt="">
+              </div>
+              <div id="description">
+                <h4>Bottle Gourd Long</h4>
+                <p>Rs.28.00 PKR</p>
+                <div>
+                  <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your phone" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your address" required>
+                          </div>
+                          <!-- Button trigger modal  -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="pbutn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="items product" data-search="beetroot">
+              <div class="img">
+
+                <img src="Assets/images/groceries/vegies/beetroot.jpg" alt="">
+
+
+              </div>
+              <div id="description">
+                <h4>Beetroot</h4>
+                <p>Rs.28.00 PKR</p>
+                <div>
+                  <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your phone" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your address" required>
+                          </div>
+                          <!-- Button trigger modal  -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="pbutn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="items product" data-search="Sweet Potato">
+              <div class="img">
+
+                <img src="Assets/images/groceries/vegies/Sweet potatp.jpg" alt="">
+
+
+              </div>
+              <div id="description">
+                <h4>Sweet Potato</h4>
+                <p>Rs.28.00 PKR</p>
+                <div>
+                  <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                              placeholder="your phone" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your Email" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                              placeholder="Enter your address" required>
+                          </div>
+                          <!-- Button trigger modal  -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="pbutn">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- dairy -->
+            <div class="card-container containerItems">
+            <h1> Dairy </h1>
+
+              <div class="subc">
+                <div class="items product" data-search="brown loaf">
+                  <div class="img">
+                    <img src="Assets/images/groceries/DAIRY/suradeach-saetang-WMXWxdbAgV0-unsplash.jpg" alt="">
+                  </div>
+                  <div id="description">
+                    <h4> Brown loaf</h4>
+                    <p>Rs.70.00 PKR</p>
+                    <div>
+                      <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your name" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your phone" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your Email" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your address" required>
+                              </div>
+                              <!-- Button trigger modal  -->
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="items product" data-search="Cheese">
+                  <div class="img">
+                    <img src="Assets/images/groceries/DAIRY/waldemar-kPqaqug998Y-unsplash.jpg" alt="">
+                  </div>
+                  <div id="description">
+                    <h4> Cheese</h4>
+                    <p>Rs.1200.00 PKR</p>
+                    <div>
+                      <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your name" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your phone" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your Email" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your address" required>
+                              </div>
+                              <!-- Button trigger modal  -->
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="items product" data-search="lassi">
+                  <div class="img">
+                    <img src="Assets/images/groceries/DAIRY/waldemar-rbJ9BY8bRRY-unsplash.jpg" alt="">
+                  </div>
+                  <div id="description">
+                    <h4> Lassi</h4>
+                    <p>Rs.120.00 PKR</p>
+                    <div>
+                      <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your name" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your phone" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your Email" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your address" required>
+                              </div>
+                              <!-- Button trigger modal  -->
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="items product" data-search="Brown Break slice">
+                  <div class="img">
+                    <img src="Assets/images/groceries/dairy2/7_750x.webp" alt="">
+                  </div>
+                  <div id="description">
+                    <h4> Brown Bread Slices</h4>
+                    <p>Rs.160.00 PKR</p>
+                    <div>
+                      <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your name" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="your phone" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your Email" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                                <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                  placeholder="Enter your address" required>
+                              </div>
+                              <!-- Button trigger modal  -->
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="button" id="pbutn" value="Add to Cart" class="btn btn-primary " data-bs-toggle="modal">
+
+                    </div>
+                  </div>
+                </div>
+              <div class="items product" data-search="Cherry Cup cake">
+                <div class="img">
+                  <img src="Assets/images/groceries/dairy2/32-2_533x.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4>Cherry Cup Cake</h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="pbutn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="items product" data-search=" buffalo milk"> 
+                <div class="img">
+                  <img src="Assets/images/groceries/dairy2/buffalo-milk-1-1.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4>Buffalo Milk</h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="pbutn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="items product" data-search="Khalis Khoya">
+                <div class="img">
+                  <img src="Assets/images/groceries/dairy2/IMG_9624_750x.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4>Khalis Khoya</h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="pbutn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="items product" data-search="Desi Ghee">
+                <div class="img">
+                  <img src="Assets/images/groceries/dairy2/IMG_9898_750x.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4>Desi Ghee</h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="pbutn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="items product" data-search="Desi Yogurt">
+                <div class="img">
+                  <img src="Assets/images/groceries/dairy2/IMG_9939_750x.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4> Desi Yogurt</h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="pbutn">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="items product" data-search=" Almond Milk">
+                <div class="img">
+                  <img src="Assets/images/groceries/dairy2/social-posting.webp" alt="">
+                </div>
+                <div id="description">
+                  <h4> Almond Milk</h4>
+                  <p>Rs.28.00 PKR</p>
+                  <div>
+                    <input type="button" id="pbutn" value="Buy It Now" class="btn btn-primary " data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Name</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your name" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="your phone" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your Email" required>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label">address</label>
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter your address" required>
+                            </div>
+                            <!-- Button trigger modal  -->
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="pbutn">submit</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button id="pbutn">Add to cart</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+
+              <!-- article section -->
+              <h1 class="atitle">Article</h1>
+              <div class="artmain">
+                <div class="aprt1">
+
+                  <article>
+                    <h2> Understanding Environmental Conservation: A Guide to Protecting Our Planet</h2>
+                    <p>Introduction
+                      Environmental conservation is the practice of protecting the natural world to ensure that all
+                      living
+                      organisms can thrive. This guide aims to provide an overview of key concepts, the importance of
+                      conservation, and actionable steps individuals and communities can take to contribute to
+                      environmental
+                      protection.
+
+                      The Importance of Environmental Conservation
+                      Biodiversity Preservation: Protecting diverse species ensures ecosystem stability and resilience.
+                      Climate Regulation: Healthy ecosystems play a crucial role in regulating the Earth's climate.
+                      Resource Management: Sustainable use of natural resources prevents depletion and ensures
+                      availability
+                      for
+                      future generations.
+                      Key Concepts in Environmental Conservation
+                      Ecosystems and Habitats: Understanding the various ecosystems (forests, oceans, wetlands) and
+                      their
+                      significance.
+                      Sustainable Practices: Methods such as recycling, renewable energy use, and sustainable
+                      agriculture.
+                      Pollution Control: Reducing emissions, managing waste, and preventing pollutants from entering the
+                      environment.
+                      Actions You Can Take
+                      Reduce, Reuse, Recycle: Minimize waste by following the three Rs.
+                      Support Renewable Energy: Opt for energy sources like solar, wind, and hydroelectric.
+                      Conserve Water: Implement water-saving techniques at home and in the community.
+                      Advocate for Policy Change: Support policies and legislation that protect the environment.
+                      Educate and Raise Awareness: Share knowledge about environmental conservation with others.
+                      Community Efforts and Global Initiatives
+                      Local Conservation Projects: Participate in or support local clean-up and conservation projects.
+                      Global Agreements: Understand the role of international agreements like the Paris Agreement in
+                      combating
+                      climate change.
+                      Conclusion
+                      Environmental conservation is vital for the health of our planet and all its inhabitants. By
+                      understanding
+                      its importance and actively participating in conservation efforts, we can ensure a sustainable
+                      future
+                      for
+                      generations to come.</p>
+                    <h6>Author: <span> Fawad Khan</span> <a href="articles.html">click for more..</a></h6>
+                  </article>
+
+                </div>
+                <div class="aprt2">
+                  <img src="Assets/images/aritcle/benjamin-voros-AD6rn3vqG7o-unsplash.jpg" alt="">
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="fruits.html">fruits</a></li>
+              <li><a href="vegitables.html">vegitables</a></li>
+              <li><a href="dairy.html">Dairy</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+              <li><a href="#">Articles</a></li>
+              <li><a href="#">New Arival</a></li>
+              <li><a href="#">Most soled producat</a></li>
+              <li><a href="#"></a></li>
+
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+              <li><a href="#">Customer Agreement</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Media Kit</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Our Blog </h4>
+            <p>
+              Subscribe to our newsletter for a weekly dose
+              of news, updates, helpful tips, and
+              exclusive offers.
+            </p>
+            <form action="#">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- main div end -->
+
+
+
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- js -->
+     
+    <script src="script.js"></script>
+</body>
+
+</html>
